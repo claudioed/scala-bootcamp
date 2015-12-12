@@ -1,0 +1,14 @@
+package corescala
+
+import scala.xml.NodeSeq
+
+class Container(app: WebApp) {
+  private val request = new Request(1)
+
+  def run(page: String): String = page match {
+    case "index" => app.index(request)
+    case "about" => app.about(request)
+    case "contato" => app.contato(request)
+    case p => "pagina desconhecida"
+  }
+}

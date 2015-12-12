@@ -1,0 +1,8 @@
+package corescala
+
+class Pessoa(nome: String) {
+  def numDocumento: String
+}
+
+class PessoaFisica(nome: String, cpf: String) extends Pessoa
+class PessoaJuridica(nome: String, cnpj: String) extends Pessoa

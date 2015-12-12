@@ -1,0 +1,5 @@
+package corescala
+
+object Soma {
+  def somar(lista: List[Int]): Int = throw new UnsupportedOperationException("not implemented yet")
+}
